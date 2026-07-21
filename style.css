@@ -8,4 +8,32 @@ body{
 
     height: 95vh;
     flex-direction: column;
+
+    font-family: "VT323", monospace;
+}
+
+h1::after{
+
+content:"_";
+
+animation:piscar 1s infinite;
+
+}
+
+@keyframes piscar{
+
+50%{
+opacity:0;
+}
+
+}
+
+@keyframes shake{
+
+0%{transform:translateX(0);}
+25%{transform:translateX(-5px);}
+50%{transform:translateX(5px);}
+75%{transform:translateX(-5px);}
+100%{transform:translateX(0);}
+
 }
